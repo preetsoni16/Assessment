@@ -1,0 +1,920 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*------------------------------------------------ top Header start-------------------------------------------------*/
+.top-head{
+    z-index: 2;
+    background-color: #1f272b;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 12px;
+    column-gap: 500px;
+    justify-content: space-evenly;
+}
+.social-media{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;    
+}
+.social-icon{
+    list-style-type: none;
+}
+.social-icon:hover{
+    color: #f5a425;
+}
+#top-head-color{
+    color: #f5a425;
+    font-size: 15px;
+}
+/* @media (min-width: 481px) and (max-width: 769px) {
+    .title  {
+      display: none;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        margin-left: -85px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .title  {
+      display: none;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    }
+  } */
+/*------------------------------------------------ top header end--------------------------------------------------  */
+
+/* -------------------------------------------------navigation start--------------------------------------------------- */
+/* .square-1{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    opacity: 0.2;
+} */
+.navbar{
+    position: sticky;
+    top: 0px;
+    background-color: #1f272bd2;
+    z-index: 1;
+    display: grid;
+    width: 100%;
+    padding: 25px;
+    align-items: center;
+}
+.nav{
+    margin-left: 49%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    z-index: 1;
+}
+.nav-1{
+    list-style-type: none;
+}
+.link:hover{
+    color: #f5a425;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+}
+.dropdown .menu{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 15px;
+    color: #1f272b;
+}
+.dropdown .menu:hover{
+    color: #f5a425;
+}
+li:hover .dropdown{
+    display: block;
+}
+.logo{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 4%;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+/* @media (min-width: 481px) and (max-width: 769px) {
+    
+    .navbar{
+        display: flex;
+        justify-content: start;
+        padding: 0px;
+    }
+    .nav{
+        display: block;
+        flex-direction: column;
+    }
+    .nav-1{
+        margin-left: 180px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .navbar{
+        display: flex;
+        justify-content: start;
+        padding: 0px;
+    }
+    .nav{
+        display: block;
+        flex-direction: column;
+    }
+    .nav-1{
+        margin-left: 80px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+  } */
+/* ----------------------------------------navigation end---------------------------------------------------------- */
+
+/*-------------------------------------- main banner area start--------------------------------------------------- */
+.video{
+    position: absolute;
+    width: 100%;
+}
+.square{
+    background-color: #000000;
+    width: 100%;
+    height: 760px;
+    opacity: 0.6;
+    position: absolute;
+}
+.video-desc{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 5%;
+}
+h5{
+    color: #ffffff;
+    font-size: 20px;
+}
+h3{
+    color: #ffffff;
+    font-size: 35px;
+    margin-top: 30px;
+}
+.desc{
+    color: #ffffff;
+    font-size: 21px;
+    margin-top: 30px;
+    width: 850px;
+}
+.join{
+    background-color: #a12c2f;
+    padding: 15px 45px;
+    border-radius: 25px;
+    color: #ffffff;
+    border: none;
+    margin-top: 55px;
+}
+.card-slider{
+    position: relative;
+    margin-top: 44%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 350px;
+    margin-right: 350px;
+}
+.card-img{
+    position: absolute;
+    border-radius: 25px;
+    width: 320px;
+    height: 300px;
+}
+.icon{
+    position: absolute;
+    margin-left: 120px;
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+}
+.card-title{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 90px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.card-desc{
+    position: absolute;
+    margin-top: 190px;
+    line-height: 1.5;
+    width: 300px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+@media (min-width: 481px) and (max-width: 769px) {
+    .square{
+        height: 350px;
+    }
+    .card-slider{
+        display: none;
+    }
+    .video-desc{
+        text-align: center;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+    .desc{
+        width: 500px;
+        font-size: 18px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .join{
+        background-color: #a12c2f;
+        padding: 10px;
+        border-radius: 25px;
+        color: #ffffff;
+        border: none;
+        margin-top: 18px;
+    }
+    .fa-chevron-left{
+        display: none;
+    }
+    .fa-chevron-right{
+        display: none;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .square{
+        height: 260px;
+    }
+    .card-slider{
+        display: none;
+    }
+    .video-desc{
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+    .desc{
+        width: 350px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    h5{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .join{
+        background-color: #a12c2f;
+        padding: 10px;
+        border-radius: 25px;
+        color: #ffffff;
+        border: none;
+        margin-top: 25px;
+    }
+    .fa-chevron-left{
+        display: none;
+    }
+    .fa-chevron-right{
+        display: none;
+    }
+  }
+/* -----------------------------------------------------main banner area end------------------------------------------------- */
+
+/* -----------------------------------------------------meeting card start----------------------------------------------------- */
+.meeting{
+    background-image: url(images/meetings-bg.jpg);
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 400px;
+    padding-bottom: 200px;
+}
+.meeting-group-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 80px;
+}
+.heading{
+    margin-left: 36%;
+}
+.border{
+    width: 85%;
+    margin-left: 8%;
+    height: 1px;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+@media (min-width: 481px) and (max-width: 769px) {
+    .heading{
+        font-size: 25px;
+        margin-left: 32%;
+        margin-top: 80px;
+    }
+    .meeting-group-card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .heading{
+        font-size: 23px;
+        margin-left: 20%;
+    }
+    .meeting-group-card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.card-g{
+    padding-top: 60px;
+}
+.card-m-1{
+    background-color: #ffffff;
+    width: 300px;
+    height: 420px;
+    border-radius: 25px;
+}
+.card-title-1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+    padding-top: 25px;
+}
+.border-m-t{
+    margin-left: 25px;
+    width: 250px;
+    height: 1px;
+    background-color: #1f272b;
+    margin-top: 12px;
+}
+.card-list{
+    margin-top: 25px;
+    list-style-type: none;
+    margin-left: 25px;
+}
+.c-list{
+    margin-top: 25px;
+    font-size: 20px;
+}
+.c-list:hover{
+    color: #a12c2f;
+}
+.border-m-b{
+    margin-left: 25px;
+    width: 250px;
+    height: 1px;
+    background-color: #1f272b;
+    margin-top: 25px;
+}
+.up-meeting{
+    background-color: #a12c2f;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.card-group{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 40px;
+    column-gap: 50px;
+}
+.card-m-2{
+    width: 340px;
+    height: 340px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+.date{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 25px;
+}
+.date-month{
+    font-size: 15px;
+    color: #a12c2f;
+    margin-bottom: 8px;
+}
+.date-title{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.date-detail{
+    margin-left: 25px;
+}
+span{
+    font-weight: bold;
+    font-size: 24px;
+}
+.card-m-3{
+    width: 340px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+.date-new{
+    margin: 28px;
+}
+.date-month-1{
+    margin-bottom: 8px;
+    color: #a12c2f;
+}
+.date-detail-1{
+    margin-top: 10px;
+}
+.date-title-1{
+    font-size: 20px;
+}
+.date-desc{
+    margin-top: 12px;
+    margin-left: 25px;
+}
+.price{
+    position: absolute;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 15px;  
+    border-radius: 18px;
+    opacity: 0.8;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+/* ------------------------------------------------meeting card end------------------------------------------ */
+
+/* ------------------------------------------------apply bachelor card start----------------------------------- */
+.apply{
+    background-image: url(images/apply-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+@media (min-width: 481px) and (max-width: 769px) {
+    .apply-main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-edu{
+        padding-top: 50px;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .apply-main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-edu{
+        padding-top: 50px;
+    }
+}
+.apply-main{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+.bachelor-card{
+    background-color: #ffffff25;
+    width: 550px;
+    padding: 40px;
+}
+.apply-title{
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.apply-desc{
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.apply-btn{
+    background-color: #a12c2f;
+    padding: 10px 18px;
+    border-radius: 25px;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+}
+.apply-btn-1{
+    background-color: #f5a425;
+    padding: 10px 18px;
+    border-radius: 25px;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+}
+.edu-templet{
+    background-color: #ffffff;
+    width: 550px;
+    padding: 25px 10px;
+    border-radius: 25px;
+}
+.edu-icon{
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    color: #f5a425;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.edu-desc{
+    width: 400px;
+    margin-top: 25px;
+    color: #000000;
+}
+.edu-border{
+    width: 450px;
+    height: 1px;
+    background-color: #1f272b;
+    margin-top: 15px;
+}
+.edu-icon-1{
+    display: grid;
+    color: #000000;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.edu-desc{
+    width: 400px;
+    margin-top: 5px;
+    color: #000000;
+}
+.edu-border{
+    width: 450px;
+    height: 1px;
+    background-color: #1f272b;
+    margin-top: 15px;
+}
+/* ------------------------------------------------apply bachelor card End----------------------------------- */
+
+/* ------------------------------------------------popular course start----------------------------------- */
+.popular-course{
+    background-image: url(images/meetings-bg.jpg);
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@media (min-width: 481px) and (max-width: 769px) {
+    .popular-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fa-chevron-left{
+        display: none;
+    }
+    .fa-chevron-right{
+        display: none;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .popular-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fa-chevron-left{
+        display: none;
+    }
+    .fa-chevron-right{
+        display: none;
+    }
+}
+.popular-title{
+    margin-left: 55px;
+}
+.p-title{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.course-border{
+    width: 95%;
+    height: 1px;
+    background-color: #ffffff;
+}
+.card-main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+.popular-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 25px;
+}
+.card-p{
+    background-color: #ffffff;
+    width: 270px;
+}
+.p-card-title{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 25px;
+}
+.card-border{
+    width: 230px;
+    height: 1px;
+    background-color: #1f272b;
+    margin-left: 15px;
+}
+.rate{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.star{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    color: #f5a425;
+}
+.rate-price{
+    color: #a12c2f;
+    font-weight: bold;
+}
+.fa-chevron-left{
+    font-size: 25px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    padding-right: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+.fa-chevron-right{
+    font-size: 25px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    padding-right: 5px;
+    text-align: center;
+    border-radius: 50%;
+}
+.circle{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5%;
+    justify-content: center;
+}
+.p-circle{
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    margin-left: 25px;
+    border-radius: 50%;
+}
+/* ------------------------------------------------popular course end----------------------------------- */
+
+/* ------------------------------------------------fact about university start----------------------------------- */
+.fact-university{
+    background-image: url(images/facts-bg.jpg);
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@media (min-width: 481px) and (max-width: 769px) {
+  .fact-student-video{
+    display: flex;
+    flex-wrap: wrap;
+  } 
+  .student-success{
+    margin-bottom: 25px;
+  } 
+  iframe{
+    width: 450px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .fact-student-video{
+        display: flex;
+        flex-wrap: wrap;
+      } 
+    .student-success{
+        margin-bottom: 25px;
+      } 
+    iframe{
+        width: 350px;
+      }
+    .fact-title{
+        font-size: 40px;
+      }
+}
+.fact-title{
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 65px;
+}
+.student-fact{
+   display: grid; 
+   grid-template-columns: auto auto;
+   gap: 30px;
+    justify-content: space-evenly;
+}
+.fact-student-video{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    justify-content: center;
+    margin-right: 55px;
+    padding-top: 45px;
+}
+.student-success{
+    width: 210px;
+    height: 150px;
+    background-color: #ffffff25;
+    border-radius: 25px;
+    padding-top: 25px;
+}
+.stu-perc{
+    font-size: 45px;
+    font-weight: bold;
+    color: #f5a425;
+    text-align: center;
+}
+.stu-desc{
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+}
+/* -----------------------------------------------------Fact about university end--------------------------------- */
+
+/* -----------------------------------------------------contact us form------------------------------------------- */
+
+.cont-bg{
+    background-image: url(images/meetings-bg.jpg);
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+@media (min-width: 481px) and (max-width: 769px) {
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-form{
+        width: 461px;
+    }
+    form{
+        display: inline-block;
+    }
+    .contact-detail{
+        margin-top: 25px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    form{
+        display: inline-block;
+    }
+    .contact-detail{
+        margin-top: 25px;
+    }
+  }
+.contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.contact-form{
+    background-color: #ffffff;
+    width: 750px;
+    border-radius: 25px;
+    padding: 45px;
+}
+.contact-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-border{
+    width: 650px;
+    height: 1px;
+    background-color: #1f272b;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: #1f272b17;
+    padding: 12px;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+textarea{
+    border: none;
+    outline: none;
+    background-color: #1f272b17;
+    border-radius: 25px;
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 15px;
+}
+.send-btn{
+    background-color: #a12c2f;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    color: #ffffff;
+    margin-left: 15px;
+    margin-top: 35px;
+}
+.contact-detail{
+    width: 270px;
+    height: 575px;
+    background-color: #a12c2f;
+    border-radius: 25px;
+    padding: 35px;
+}
+.phone-no{
+    color: #ffffff;
+    font-size: 25px;
+}
+.phone-no-1{
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.name{
+    margin-bottom: 10px;
+}
+.d-border{
+    width: 170px;
+    margin-top: 25px;
+    height: 1px;
+    background-color: #ffffff;
+}
+.d-border-1{
+    width: 190px;
+    margin-top: 25px;
+    height: 1px;
+    background-color: #ffffff;
+}
+/* -----------------------------------------------------contact us form------------------------------------------- */
+
+/* -----------------------------------------------------footer---------------------------------------------------- */
+
+.footer{
+    padding-top: 120px;
+}
+.footer-border{
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+.footer-desc{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 70px;
+}
